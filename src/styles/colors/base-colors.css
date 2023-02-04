@@ -1,0 +1,18 @@
+/* Base Colors */
+
+:root {
+  color-scheme: light dark;
+
+  --color-blue-depths: #3D4161;
+  --color-living-coral: #FC766A;
+  --color-black-beauty: #27272A;
+  --color-sea-pink: #E198AD;
+  --color-vibrant-yellow: #FDDB27;
+  --color-limpet-shell: #99DEDF;
+  --color-blanc-de-blanc: #E7E9E7;
+  --color-almost-white: #FDFDFE;
+  --color-turkish-sea: #375998;
+  --color-viridian-green: #00979C;
+  --color-turtle-green: #808956;
+  --color-absolute-black: #000000;
+}

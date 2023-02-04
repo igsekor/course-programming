@@ -1,0 +1,12 @@
+/* Base Colors */
+
+:root {
+  color-scheme: light;
+
+  --is-light-theme-on: 1;
+  --is-dark-theme-on: 0;
+
+  --color-text: var(--color-black-beauty);
+  --color-background: var(--color-almost-white);
+  --color-fade: var(--color-blanc-de-blanc);
+}
