@@ -1,0 +1,349 @@
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-Latin.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-Latin.woff) format("woff");
+  unicode-range: U+30,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-Latin.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-Latin.woff) format("woff");
+  unicode-range: U+30,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-Latin.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-Latin.woff) format("woff");
+  unicode-range: U+30,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-Latin.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-Latin.woff) format("woff");
+  unicode-range: U+30,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-Latin.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-Latin.woff) format("woff");
+  unicode-range: U+30,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-LatinSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-LatinSupplement.woff) format("woff");
+  unicode-range: U+30,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-LatinSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-LatinSupplement.woff) format("woff");
+  unicode-range: U+30,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-LatinSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-LatinSupplement.woff) format("woff");
+  unicode-range: U+30,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-LatinSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-LatinSupplement.woff) format("woff");
+  unicode-range: U+30,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-LatinSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-LatinSupplement.woff) format("woff");
+  unicode-range: U+30,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-LatinExtendedA.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-LatinExtendedA.woff) format("woff");
+  unicode-range: U+30,U+31,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-LatinExtendedA.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-LatinExtendedA.woff) format("woff");
+  unicode-range: U+30,U+31,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-LatinExtendedA.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-LatinExtendedA.woff) format("woff");
+  unicode-range: U+30,U+31,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-LatinExtendedA.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-LatinExtendedA.woff) format("woff");
+  unicode-range: U+30,U+31,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-LatinExtendedA.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-LatinExtendedA.woff) format("woff");
+  unicode-range: U+30,U+31,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-LatinExtendedB.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-LatinExtendedB.woff) format("woff");
+  unicode-range: U+30-32,U+34,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-LatinExtendedB.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-LatinExtendedB.woff) format("woff");
+  unicode-range: U+30-32,U+34,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-LatinExtendedB.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-LatinExtendedB.woff) format("woff");
+  unicode-range: U+30-32,U+34,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-LatinExtendedB.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-LatinExtendedB.woff) format("woff");
+  unicode-range: U+30-32,U+34,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-LatinExtendedB.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-LatinExtendedB.woff) format("woff");
+  unicode-range: U+30-32,U+34,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-GreekCoptic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-GreekCoptic.woff) format("woff");
+  unicode-range: U+30,U+33,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-GreekCoptic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-GreekCoptic.woff) format("woff");
+  unicode-range: U+30,U+33,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-GreekCoptic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-GreekCoptic.woff) format("woff");
+  unicode-range: U+30,U+33,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-GreekCoptic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-GreekCoptic.woff) format("woff");
+  unicode-range: U+30,U+33,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-GreekCoptic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-GreekCoptic.woff) format("woff");
+  unicode-range: U+30,U+33,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-Cyrilic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-Cyrilic.woff) format("woff");
+  unicode-range: U+30,U+34,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-Cyrilic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-Cyrilic.woff) format("woff");
+  unicode-range: U+30,U+34,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-Cyrilic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-Cyrilic.woff) format("woff");
+  unicode-range: U+30,U+34,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-Cyrilic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-Cyrilic.woff) format("woff");
+  unicode-range: U+30,U+34,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-Cyrilic.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-Cyrilic.woff) format("woff");
+  unicode-range: U+30,U+34,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Bold-CyrilicSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Bold-CyrilicSupplement.woff) format("woff");
+  unicode-range: U+30,U+32,U+35,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Light-CyrilicSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Light-CyrilicSupplement.woff) format("woff");
+  unicode-range: U+30,U+32,U+35,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Medium-CyrilicSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Medium-CyrilicSupplement.woff) format("woff");
+  unicode-range: U+30,U+32,U+35,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-Regular-CyrilicSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-Regular-CyrilicSupplement.woff) format("woff");
+  unicode-range: U+30,U+32,U+35,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-CyrilicSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Code/FiraCode-SemiBold-CyrilicSupplement.woff) format("woff");
+  unicode-range: U+30,U+32,U+35,U+46,U+2212;
+}

@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-Latin.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-Latin.woff) format("woff");
+  unicode-range: U+30,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-LatinSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-LatinSupplement.woff) format("woff");
+  unicode-range: U+30,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-LatinExtendedA.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-LatinExtendedA.woff) format("woff");
+  unicode-range: U+30,U+31,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-LatinExtendedB.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-LatinExtendedB.woff) format("woff");
+  unicode-range: U+30-32,U+34,U+38,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-GreekCoptic.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-GreekCoptic.woff) format("woff");
+  unicode-range: U+30,U+33,U+37,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-Cyrilic.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-Cyrilic.woff) format("woff");
+  unicode-range: U+30,U+34,U+46,U+2212;
+}
+
+@font-face {
+  font-family: "Fira Math";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Fira-Math/FiraMath-Regular-CyrilicSupplement.woff2) format("woff2");
+  src: url(/fonts/Fira-Math/FiraMath-Regular-CyrilicSupplement.woff) format("woff");
+  unicode-range: U+30,U+32,U+35,U+46,U+2212;
+}
