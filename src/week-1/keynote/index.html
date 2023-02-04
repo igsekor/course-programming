@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Формализации алгоритмов — Лекция 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+        <style>
+            .shower {
+                --slide-ratio: calc(16 / 9);
+            }
+        </style>
+    </head>
+    <body class="shower list">
+
+        <header class="caption">
+            <h1>Формализации алгоритмов</h1>
+            <p>В лекции представлены основные подходы к формализации в теории алгоритмов, анализируются исторические события, лежащие в основе и послужившие толчком к развитию различных формализаций. Большое внимание уделено понятию машины Тьюринга, как основному принципу построения современных языков программирования.</p>
+        </header>
+
+        <section class="slide" id="slide-1">
+            <h2>Формализации алгоритмов</h2>
+            <h3>Лекция 1</h3>
+            <p>подготовлено
+                <a href="https://igsekor.com">@igsekor</a>
+            </p>
+            <figure>
+                <img class="cover" src="pictures/l1p1-boston-public-library-unsplash.jpg" alt="Three girls, one on tricycle and one boy in front of steps">
+                <figcaption class="copyright right white">
+                    <a href="https://ark.digitalcommonwealth.org/ark:/50959/fj237q03j ">Photographer: Abdalian, Leon H., 1884-1967. Date: June 22, 1950</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-1 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    text-align: center;
+                    font-size: 120px;
+                }
+
+                #slide-1 h3 {
+                    margin: 10px 0 0;
+                    color: white;
+                    text-align: center;
+                    font-size: 25px;
+                }
+
+                #slide-1 p {
+                    margin: 10px 0 0;
+                    text-align: center;
+                    color: white;
+                    font-style: italic;
+                    font-size: 20px;
+                }
+
+                #slide-1 p a {
+                    color: white;
+                }
+
+                #slide-1 q {
+                    margin: 40px 0 0;
+                    text-align: center;
+                    color: white;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+
+                #slide-1 figure {
+                    width: 100%;
+                    height: auto;
+                }
+
+                #slide-1 figure img {
+                    object-fit: contain;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-2">
+            <h2>Первый в мире электронный цифровой вычислитель общего назначения ENIAC (сокр. от Electronic Numerical Integrator and Computer)</h2>
+            <figure>
+                <img class="cover" src="pictures/Eniac.jpeg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://en.wikipedia.org/wiki/ENIAC#/media/File:Eniac.jpg">ENIAC in BRL building 328. (U.S. Army photo, c. 1947–1955)</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-2 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    font-size: 50px;
+                }
+
+                #slide-2 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-3">
+            <div class="two-columns">
+                <img src="pictures/CharlesBabbage.jpg" alt="Чарлз Бэбидж">
+                <img src="pictures/AdaLovelace.jpg" alt="Августа Ада Байронr">
+                <p class="item">
+                    Чарлз Бэбидж
+                </p>
+                <p class="item">
+                    Августа Ада Байрон
+                </p>
+            </div>
+            <style>
+                #slide-3 .two-columns {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-items: center;
+                    grid-gap: 5%;
+                }
+                #slide-3 .item {
+                    text-align: center;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-4">
+            <h2>Программист — это радиолюбитель?</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p3-rod-flores.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://unsplash.com/@rod_fromthe_guad">Photo by Rod Flores</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-4 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    font-size: 50px;
+                }
+
+                #slide-4 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-5">
+            <h2>Структура курса</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p2-stephanie-valencia.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://unsplash.com/@anieva">Photo by Stephanie Valencia</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-5 h2 {
+                    margin: 30px 0 0;
+                    color: black;
+                    font-size: 50px;
+                }
+
+                #slide-5 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-6">
+            <h2>После лекции:</h2>
+            <ul>
+                <li>Выполнить задания</li>
+                <li>Ответить на вопросы</li>
+                <li>Выполнить домашние задания</li>
+            </ul>
+        </section>
+
+        <section class="slide" id="slide-7">
+            <h2>Во время практики будут:</h2>
+            <ul>
+                <li>Мастер-классы по современным технологиям</li>
+                <li>Ответы на вопросы по домашним заданиям</li>
+                <li>Совершенствование навыков</li>
+            </ul>
+        </section>
+
+        <section class="slide" id="slide-8">
+            <h2>Вы сможете выполнять задания на:</h2>
+            <ul>
+                <li>Python</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="slide" id="slide-9">
+            <h2>Понятие алгоритма</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p4-markus-spiske-iar.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://unsplash.com/@markusspiske">Photo by Markus Spiske</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-9 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    font-size: 50px;
+                }
+
+                #slide-9 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-10">
+            <figure>
+                <blockquote>
+                    <p>АЛГОРИ́ТМ (от algorithmi – лат. написания араб. имени аль-Хорезми), инструкция, точное описание способа действия с использованием простых, общепонятных элементов (напр., операций)</p>
+                </blockquote>
+                <figcaption>Большая российская энциклопедия</figcaption>
+            </figure>
+        </section>
+
+        <section class="slide" id="slide-11">
+            <h2>Смежные понятия</h2>
+            <ul>
+                <li>Дискретность</li>
+                <li>Детерминированность</li>
+                <li>Понятность</li>
+                <li>Завершаемость</li>
+                <li>Массовость</li>
+                <li>Результативность</li>
+            </ul>
+        </section>
+
+        <section class="slide" id="slide-12">
+            <div class="two-columns">
+                <img src="pictures/DavidHilbert.jpg" alt="Давид Гилберт">
+                <img src="pictures/KurtGödel.jpg" alt="Курт Гёдель">
+                <p class="item">
+                    Давид Гилберт
+                </p>
+                <p class="item">
+                    Курт Гёдель
+                </p>
+            </div>
+            <style>
+                #slide-12 {
+                    display: grid;
+                    align-items: center;
+                    padding: 0px 100px;
+                }
+
+                #slide-12 .two-columns {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-items: center;
+                    grid-gap: 5%;
+                }
+                #slide-12 .item {
+                    text-align: center;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-13">
+            <h2>Теоремы Курта Гёделя</h2>
+            <ol>
+                <li>Если формальная арифметика непротиворечива, то в ней существует невыводимая и неопровержимая формула.</li>
+                <li>Если формальная арифметика непротиворечива, то в ней невыводима некоторая формула, содержательно утверждающая непротиворечивость этой арифметики.</li>
+            </ol>
+        </section>
+
+        <section class="slide" id="slide-14">
+            <div class="two-columns">
+                <img src="pictures/EmilPost.jpg" alt="Эмиль Пост">
+                <img src="pictures/AlanTuring.jpg" alt="Алан Тьюринг">
+                <img src="pictures/AlonsoChurch.jpg" alt="Алонзо Чёрч">
+                <img src="pictures/AAMarkov.jpg" alt="А.А. Марков">
+                <p class="item">
+                    Эмиль Пост
+                </p>
+                <p class="item">
+                    Алан Тьюринг
+                </p>
+                <p class="item">
+                    Алонзо Чёрч
+                </p>
+                <p class="item">
+                    А.А. Марков
+                </p>
+            </div>
+            <style>
+                #slide-14 {
+                    display: grid;
+                    align-items: center;
+                    padding: 0px 100px;
+                }
+
+                #slide-14 .two-columns {
+                    display: grid;
+                    grid-template-columns: repeat(4, 25%);
+                    grid-template-rows: auto calc(5% + 1em);
+                    justify-items: center;
+                    column-gap: 5px;
+                    row-gap: 5%;
+                }
+                #slide-14 .item {
+                    object-fit: cover;
+                    text-align: center;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-15">
+            <figure>
+                <blockquote>
+                    <p>Для любой алгоритмически вычислимой функции существует вычисляющая её значения машина Тьюринга</p>
+                </blockquote>
+                <figcaption>Тезис Чёрча-Тьюринга</figcaption>
+            </figure>
+        </section>
+
+        <section class="slide" id="slide-16">
+            <h2>Новая азбука</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p5-amador-loureiro.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://unsplash.com/@amadorloureiros">Photo by Amador Loureiro</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-16 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    font-size: 50px;
+                }
+
+                #slide-16 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-17">
+            <h2>Алфавит</h2>
+            <div class="content">
+                <div>\[{A_p}= \{ {a_1}, {a_2}, ... , {a_p} \}\]</div>
+                <div>(1.1)</div>
+                <div>\[{A_p^*}= \{\epsilon\}\cup{A_p}\cup{A_p^2}\cup\ ...\ \cup{A_p^m}\cup\ ...=\bigcup_{m=0}^\infty{A_p^m}\]</div>
+                <div>(1.2)</div>
+                <div>\[\omega\in{A_p^*}\]</div>
+                <div>(1.3)</div>
+                <div>\[F(\omega)=\nu;\nu,\omega\in{A_p^m}\]</div>
+                <div>(1.4)</div>
+            </div>
+            <style>
+                #slide-17 .content {
+                    display: grid;
+                    grid-template-columns: auto min-content;
+                    align-items: center;
+                }
+
+                #slide-17 .content div {
+                    margin: 0.2em 0px;
+                    font-family: STIXGeneral-Regular;
+                    text-align: right;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-18">
+            <h2>Машина Тьюринга</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p6-mauro-sbicego.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://unsplash.com/@maurosbicego">Photo by Mauro Sbicego</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-18 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    font-size: 50px;
+                }
+
+                #slide-18 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-19">
+            <iframe class="cover" src="http://turingmachine.io" frameborder="0" width="100%" height="100%"></iframe>
+        </section>
+
+        <section class="slide" id="slide-20">
+            <h2>Алгоритм бинарного инкремента</h2>
+            <table class="striped">
+                <tbody>
+                    <tr>
+                        <th scope="col"></th>
+                        <th>0</th>
+                        <th>1</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th scope="row">q0</th>
+                        <td>r</td>
+                        <td>r</td>
+                        <td>l q1</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">q1</th>
+                        <td>1 l qs</td>
+                        <td>0 l</td>
+                        <td>1 l qs</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">qs</th>
+                        <td>—</td>
+                        <td>—</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+            <style>
+                #slide-20 td {
+                    font-style: italic;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-21">
+            <h2>Алгоритм бинарного инкремента</h2>
+            <img class="place" src="pictures/Figure.1.1.png" width="80%">
+        </section>
+
+        <section class="slide" id="slide-22">
+            <h2>Алгоритм бинарного инкремента</h2>
+            <pre>
+                <code># adds 1 to a binary number.</code>
+                <code>input: '1011'</code>
+                <code>blank: ' '</code>
+                <code>start state: right</code>
+                <code>table:</code>
+                <code>   # scan to the rightmost digit</code>
+                <code>   right:</code>
+            </pre>
+        </section>
+
+        <section class="slide" id="slide-23">
+            <h2>Алгоритм бинарного инкремента</h2>
+            <pre>
+                <code>       [1,0]: r</code>
+                <code>       ' ' : {l: carry}</code>
+                <code>   # then carry the 1</code>
+                <code>   carry:</code>
+                <code>       1   : {write: 0, l}</code>
+                <code>       [0,' ']: {write: 1, l: done}</code>
+                <code> done:</code>
+            </pre>
+            <style>
+                #slide-23 pre {
+                    counter-reset: code 7;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-24">
+            <img class="place" src="pictures/Figure.1.2.png" height="70%">
+        </section>
+
+        <section class="slide" id="slide-25">
+            <h2>Машина Поста</h2>
+            <img class="place" src="pictures/Figure.1.3.png" height="70%">
+            <style>
+                #slide-25 .place {
+                    height: auto;
+                    width: 80%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-26">
+            <h2>Машина фон Неймана</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p7-lorenzo-herrera.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right white">
+                    <a href="https://unsplash.com/@lorenzoherrera">Photo by Lorenzo Herrera</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-26 h2 {
+                    margin: 30px 0 0;
+                    color: white;
+                    font-size: 50px;
+                }
+
+                #slide-26 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-27">
+            <img class="place" src="pictures/Figure.1.4.png" height="70%">
+        </section>
+
+        <section class="slide" id="slide-28">
+            <h2>Алгоритм Маркова</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p9-michael.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right black">
+                    <a href="https://unsplash.com/@donniebrasc0">Photo by Michael</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-28 h2 {
+                    margin: 30px 0 0;
+                    color: black;
+                    font-size: 50px;
+                }
+
+                #slide-28 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-29">
+            <h2>Алгоритм Маркова</h2>
+            <p>Простыми формулами подстановки называются слова вида L → D. Заключительными формулами подстановки — слова вида L →⋅ D.</p>
+            <p>Например, для алфавита:</p>
+            <div class="content">
+                <div>\[|*abc\]</div>
+                <div>(1.5)</div>
+            </div>
+            <p>можно применить следующий алгоритм...</p>
+            <style>
+                #slide-29 .content {
+                    display: grid;
+                    grid-template-columns: auto min-content;
+                    align-items: center;
+                }
+
+                #slide-29 .content div {
+                    margin: 0.2em 0px;
+                    font-family: STIXGeneral-Regular;
+                    text-align: right;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-30">
+            <h2>Алгоритм Маркова</h2>
+            <div class="content">
+                <div>\[\begin{cases}|b\rightarrow{ba|}\\ab\rightarrow{ba}\\b\rightarrow\\*|\rightarrow{b*}\\*\rightarrow{c}\\|c\rightarrow{c}\\ac\rightarrow{c|}\\c\rightarrow{\cdot}\end{cases},\]</div>
+                <div>(1.6)</div>
+                <div>\[\begin{multline}|*||\Rightarrow{|b*|}\Rightarrow{ba|*|}\Rightarrow{a|*|}\Rightarrow{a|b*}\Rightarrow{aba|*}\\\Rightarrow{baa|*}\Rightarrow{aa|*}\Rightarrow{aa|c}\Rightarrow{aac}\Rightarrow{ac|}\Rightarrow{c||}\end{multline}\]</div>
+                <div>(1.7)</div>
+            </div>
+            <style>
+                #slide-30 .content {
+                    display: grid;
+                    grid-template-columns: auto min-content;
+                    align-items: center;
+                }
+
+                #slide-30 .content div {
+                    margin: 0.2em 0px;
+                    font-family: STIXGeneral-Regular;
+                    text-align: right;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-31">
+            <h2>λ-исчисление</h2>
+            <figure>
+                <img class="cover" src="pictures/l1p8-deepmind.jpg" alt="ENIAC (Electronic Numerical Integrator And Computer)">
+                <figcaption class="copyright right black">
+                    <a href="https://unsplash.com/@deepmind">Picture by DeepMind</a>
+                </figcaption>
+            </figure>
+            <style>
+                #slide-31 h2 {
+                    margin: 30px 0 0;
+                    color: black;
+                    font-size: 50px;
+                }
+
+                #slide-31 .cover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: 50% 100%;
+                }
+            </style>
+        </section>
+
+        <section class="slide" id="slide-32">
+            <h2>λ-исчисление</h2>
+            <p><strong>Терм</strong> — это выражение формального языка специального вида. Если провести аналогию с естественным языком, где группа слов ссылается на конкретный объект, а предложение, состоящее из групп слов, — на факт, терм обозначает объект, а формула — факт. Соответственно, в формуле может присутствовать несколько термов.</p>
+        </section>
+
+        <section class="slide" id="slide-33">
+            <h2>λ-исчисление</h2>
+            <p>Для обозначения переменной используют
+                <b>лямбда-абстракцию</b>
+                (анонимную функцию) в виде терма λx.t, где x — аргумент функции, t — её тело. Применение функции (<b>аппликация</b>) обозначается через терм f x, где f — функция, x — подставляемое в неё значение аргумента.</p>
+        </section>
+
+        <section class="slide" id="slide-34">
+            <h2>О приоритетах операций:</h2>
+            <ol>
+                <li>Применение функции левоассоциативно. Т.е. s t u — это тоже самое, что (s t) u.</li>
+                <li>Аппликация (применение или вызов функции по отношению к заданному значению) забирает себе всё, до чего дотянется. Т.е. λx. λy. x y x означает то же самое, что λx. (λy. ((x y) x)).</li>
+                <li>Скобки явно указывают группировку действий.</li>
+            </ol>
+        </section>
+
+        <section class="slide" id="slide-35">
+            <h2>λ-исчисление</h2>
+            <p>Для терма (λx.t) y, (λx.t) — это функция с одним аргументом x и телом t. Каждый шаг вычисления будет заключаться в замене всех вхождений переменной x внутри t на y.</p>
+            <p>Например (λx.xx)(λx.xx) на каждом шаге вычисления будет порождать самоё себя.</p>
+        </section>
+
+        <section class="slide clear" id="slide-35">
+            <h2 class="shout shrink"><a href="https://igsekor.com">Везде @igsekor</a></h2>
+        </section>
+
+        <footer class="badge">
+            <a href="https://github.com/shower/shower">Shower on GitHub</a>
+        </footer>
+
+        <div class="progress"></div>
+
+        <script src="shower/shower.js"></script>
+        <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <!-- Copyright © 2023 Igor Korovchenko -->
+
+    </body>
+</html>
