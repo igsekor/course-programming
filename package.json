@@ -1,0 +1,38 @@
+{
+  "name": "course-programming",
+  "version": "1.0.0",
+  "description": "Базовый курс по программированию",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run make-keynotes && eleventy --quiet && npm run rename-bundled && npm run clean-temp && npx gulp",
+    "start": "eleventy --serve --quiet",
+    "editorconfig": "editorconfig-checker",
+    "test": "npm run editorconfig",
+    "make-keynotes": "node make-keynotes.js",
+    "rename-bundled": "node rename-bundled.js",
+    "clean-temp": "node clean-temp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igsekor/course-programming.git"
+  },
+  "author": "igsekor",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/igsekor/course-programming/issues"
+  },
+  "homepage": "https://github.com/igsekor/course-programming#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "autoprefixer": "^10.4.13",
+    "del": "^6.0.0",
+    "editorconfig-checker": "^5.0.1",
+    "eleventy-plugin-mathjax": "^2.0.4",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-rewrite": "^5.0.0",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^15.0.0"
+  }
+}
