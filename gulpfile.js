@@ -38,7 +38,7 @@ const cacheHash = () => {
     .src('dist/**/*.{css,js}')
     .pipe(rev())
     .pipe(gulp.dest('dist'))
-    .pipe(rev.manifest('rev-manifset.json'))
+    .pipe(rev.manifest('rev-manifest.json'))
     .pipe(gulp.dest('dist'))
 }
 
@@ -47,7 +47,7 @@ const cacheReplace = () => {
     .src('dist/**/*.{html,css,svg}')
     .pipe(
       revRewrite({
-        manifest: fs.readFileSync('dist/rev-manifset.json'),
+        manifest: fs.readFileSync('dist/rev-manifest.json'),
       })
     )
     .pipe(gulp.dest('dist'))
